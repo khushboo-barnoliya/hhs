@@ -30,7 +30,7 @@ export default function Dashboard({ children }) {
   // If not authenticated, redirect to login
   useEffect(() => {
     if (!isAuthenticated) {
-      router.push("/login"); // Replace with your login route
+      router.push("/api/login"); // Replace with your login route
     }
   }, [isAuthenticated]);
 
